@@ -1,0 +1,77 @@
+﻿@model List<MvcApplication3.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<br/>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<br />
+
+<div>
+    <table style="border:1px solid black;">
+        <tr style="border:1px solid black;">
+            <th style="border:1px solid black;">
+                FirstName
+            </th>
+            <th style="border:1px solid black;">
+                LastName
+            </th>
+            <th style="border:1px solid black;">
+                EMail
+            </th>
+            <th style="border:1px solid black;">
+                Address
+            </th>
+            <th style="border:1px solid black;">
+                PhoneNo
+            </th>
+            <th style="border:1px solid black;">
+                Company
+            </th>
+            <th style="border:1px solid black;">
+                Designation
+            </th>
+            <th style="border:1px solid black;"></th>
+        </tr>
+
+        @foreach (var item in Model)
+{
+    <tr style="border:1px solid black;">
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.EMail)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.PhoneNo)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.DisplayFor(modelItem => item.Company)
+        </td>
+        <td style="border:1px solid black;">
+            @Html.ActionLink("Edit", "Edit", new { id = item.UserId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.UserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.UserId })
+        </td>
+
+    </tr>
+
+}
+
+    </table>
+    </div>
+<div style="float: left;display: block;margin-top: 20px;">
+    
+
+</div>

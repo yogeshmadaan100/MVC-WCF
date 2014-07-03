@@ -1,0 +1,6 @@
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\bin\WcfService1.dll.config
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\bin\WcfService1.dll
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\bin\WcfService1.pdb
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.dll
+C:\Users\DELL PC\documents\visual studio 2013\Projects\WcfService1\WcfService1\obj\Debug\WcfService1.pdb

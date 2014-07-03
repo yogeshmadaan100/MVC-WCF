@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        
+       
+        @Styles.Render("~/Content/css")
+        <link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+        <link href="~/css/screen.css" rel="stylesheet">
+        <link href="~/css/social.css" rel="stylesheet">
+        
+         
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header>
+            
+                <div class="content-wrapper">
+                    <div class="float-left">
+                        <p class="site-title"> <img src="~/Images/logo.png"  /><br /><b>MIRA MODEL SCHOOL</b> </p>
+                    </div>
+
+                    <div class="float-right">
+                        
+                            <nav>
+                                <ul id="menu">
+                                    
+                                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                                        
+                                        <li>@Html.ActionLink("Register", "Create", "My", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                                        <li>@Html.ActionLink("Log in", "Login", "My", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                                    
+</ul>
+                            </nav>
+                       
+                </div>
+            </div>
+        </header>
+
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            
+            <div class="content-wrapper">
+                
+
+                    <div style="background-color:#FFA500 ;width:100%">
+                       
+                        <p>&copy; @DateTime.Now.Year - Tanuj And Yogesh</p>
+                        <br />
+
+
+
+                        <div class="social-icons">
+                            <ul>
+                                <li class="twitter" style="background-color: #f0f0f0">
+                                    <a href="http://www.twitter.com" target="_blank">Twitter</a>
+                                </li>
+
+                                <li class="facebook" style="background-color: #f0f0f0">
+                                    <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                                </li>
+
+                                <li class="youtube" style="background-color: #f0f0f0">
+                                    <a href="http://www.youtube.com" target="_blank">YouTube</a>
+                                </li>
+
+                                <li class="googleplus" style="background-color: #f0f0f0">
+                                    <a href="http://www.plus.google.com" target="_blank">Google +r</a>
+                                </li>
+
+                                <li class="pinterest" style="background-color: #f0f0f0">
+                                    <a href="http://www.pinterest.com" target="_blank">Pinterest</a>
+                                </li>
+
+                                <li class="paypal" style="background-color: #f0f0f0">
+                                    <a href="http://www.paypal.com" target="_blank">Paypal</a>
+                                </li>
+
+                                <li class="linkedin" style="background-color: #f0f0f0">
+                                    <a href="http://www.linkedin.com" target="_blank">LinkedIN</a>
+                                </li>
+
+                                <li class="flickr" style="background-color: #f0f0f0">
+                                    <a href="http://www.flickr.com" target="_blank">Flickrr</a>
+                                </li>
+
+                                <li class="vimeo" style="background-color: #f0f0f0">
+                                    <a href="http://www.vimeo.com" target="_blank">Vimeo</a>
+                                </li>
+
+                                <li class="tumblr" style="background-color: #f0f0f0">
+                                    <a href="http://www.tumblr.com" target="_blank">Tumblr</a>
+                                </li>
+
+                                <li class="orkut" style="background-color: #f0f0f0">
+                                    <a href="http://www.orkut.com" target="_blank">Orkut</a>
+                                </li>
+
+                                <li class="picasa" style="background-color: #f0f0f0">
+                                    <a href="http://www.picasa.com" target="_blank">Picasa</a>
+                                </li>
+
+                                <li class="skype" style="background-color: #f0f0f0">
+                                    <a href="http://www.skype.com" target="_blank">Skype</a>
+                                </li>
+
+                                <li class="html5" style="background-color: #f0f0f0">
+                                    <a href="http://www.html5.com" target="_blank">HTML 5</a>
+                                </li>
+
+                                <li class="rss" style="background-color: #f0f0f0">
+                                    <a href="http://www.rss.com" target="_blank">RSS Feed</a>
+                                </li>
+                            </ul>
+                      
+                    </div>
+
+
+                       <!-- <p>&copy; @DateTime.Now.Year - Tanuj And Yogesh</p> -->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        
+        <script src="~/js/box-slider.jquery.js"></script>
+        <script src="~/js/effects/box-slider-fx-scroll-3d.js"></script>
+        <script src="~/js/effects/box-slider-fx-fade.js"></script>
+        <script src="~/js/effects/box-slider-fx-scroll.js"></script>
+        <script src="~/js/effects/box-slider-fx-blinds.js"></script>
+        <script src="~/js/effects/box-slider-fx-carousel-3d.js"></script>
+        <script src="~/js/effects/box-slider-fx-tile-3d.js"></script>
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
